@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.main-header {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.intro-paragraph {
+    font-size: 1.2em;
+    color: #666;
+    margin: 20px 0;
+    position: relative;
+}
+
+.cta-button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+}
+.main-header::before,
+.main-header::after {
+    content: '★';
+    color: gold;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+}
+
+.main-header::before {
+    left: -30px;
+}
+
+.main-header::after {
+    right: -30px;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '“';
+    color: #999;
+    font-size: 1.5em;
+    position: absolute;
+    top: -10px;
+}
+
+.intro-paragraph::after {
+    content: '”';
+    right: -20px;
+}
+
+.cta-button::before,
+.cta-button::after {
+    content: '👉';
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-button::before {
+    left: -30px;
+}
+
+.cta-button::after {
+    right: -30px;
+}
